@@ -1,4 +1,4 @@
-# client_robotcleaning
+# Server side robot cleaning demo
 
 The back-end should simulate a robot cleaning a map.
 
