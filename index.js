@@ -77,10 +77,7 @@ server.listen(process.env.PORT || 5000, () => {
 
 // Create the initial map from the rawMap input
 const makeMap = (rawMap) => {
-  let mapInit = rawMap.trim();
-  mapInit = mapInit.replaceAll('#', 2);
-  mapInit = mapInit.replaceAll(' ', 1);
-  mapInit = mapInit.split('\n');
+  let mapInit = rawMap.trim().replace(/#/g, 2).replace(/ /g, 1).split('\n');
   let finalMap = [];
   mapInit.map((value, row) => {
     let transform = value.split('');
