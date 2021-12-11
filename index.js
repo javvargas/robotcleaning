@@ -13,7 +13,8 @@ const io = new Server(server, {
   cors: {
     //origin: "http://localhost:3000", 
     //origin: "http://172.17.74.231:3000", // CHANGE WITH YOUR SERVER CONFIG 
-    origin: "https://avidbots.quannto.com/", // CHANGE WITH YOUR SERVER CONFIG 
+    //origin: "*https://avidbots.quannto.com/*", // CHANGE WITH YOUR SERVER CONFIG 
+    origin: "*", // CHANGE WITH YOUR SERVER CONFIG 
     methods: ["GET", "POST"]
   }
 })
